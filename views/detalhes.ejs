@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/css/detalhes.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <% pokemonAtual.forEach(element => { %>
+        <div class="card-container">
+          <div class="header-card">
+            <span class="class-id"> <%= element.id %> </span>
+            <span class="class-num"> <%= element.num %> </span>
+          </div>
+          <div class="main=card">
+            <img src="<%= element.img %> " alt="<%= element.name %> " />
+            <div class="card-name"><%= element.name %></div>
+            <div class="dados-class">
+              <span class="peso"><%= element.weight %> </span>
+              <span class="altura"><%= element.heigt %> </span>
+            </div>
+          </div>
+          <div class="footer-card"><%= element.type %></div>
+        </div>
+        <% }) %>
+    </main>
+  </body>
+</html>
