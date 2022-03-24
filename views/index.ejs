@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
   </head>
   <body>
+    <header id="header">
+      <div id="div-header">
+        <h1 id="h1">Pokedex</h1>
+      </div>
+    </header>
     <main>
       <% pokedex.forEach(element => { %>
       <a href="/detalhes/<%= element.id %> ">
@@ -29,5 +34,8 @@
         <% }) %>
       </a>
     </main>
+    <footer id="footer">
+      <span id="span-footer">©Daniel Bento</span>
+    </footer>
   </body>
 </html>

@@ -7,9 +7,13 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="/css/detalhes.css" type="text/css" />
   </head>
-  <body>
+  <body><% pokemonAtual.forEach(element => { %>
+    <header id="header">
+      <div id="div-header">
+        <h1 id="h1"><%= element.name %></h1>
+      </div>
+    </header>
     <main>
-      <% pokemonAtual.forEach(element => { %>
         <div class="card-container">
           <div class="header-card">
             <span class="class-id"> <%= element.id %> </span>
@@ -27,5 +31,8 @@
         </div>
         <% }) %>
     </main>
+    <footer id="footer">
+      <span id="span-footer">©Daniel Bento</span>
+    </footer>
   </body>
 </html>

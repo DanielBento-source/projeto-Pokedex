@@ -1,4 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #9dffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
+
+header {
+    background-color: #ff5252;
+    display:flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    flex-direction: row;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+
+#div-header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
 main{
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap ;
@@ -6,25 +39,37 @@ main{
     font-size: 33px;
 }
 
+footer{
+    display: flex;
+    height: 30px;
+    background-color: #ff5252;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
 div.card-container {
     padding: 5px;
-    background-color: rgb(71, 71, 71);
+    background-color: #ffbbbb;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 400px;
-    height: 550px;
-    border: solid 1px red;
+    width: 360px;
+    height: 430px;
+    border: solid 1px #ff5252;
     border-radius: 10px;
-    box-shadow: 5px 10px 10px 1px rgb(0, 73, 0);
+    box-shadow: 5px 10px 10px 1px #068383;
 }
 
 div.card-container:hover{
-    transform: scale(1.2);
-    background-color: black;
+    transform: scale(1.4);
+    background-color:#ff7171;
+    ;
 }
 
 div.header-card {
@@ -35,4 +80,19 @@ div.header-card {
 
 a {
     text-decoration: none;
+}
+img{
+    width: 240px;
+    height: 240px;
+}
+
+#h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Bungee', cursive;
+    padding-bottom: 0px;
+    font-size: 80px;
+    text-align: center;
+    line-height: 30px;
 }
